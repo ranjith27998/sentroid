@@ -35,7 +35,7 @@ $(document).ready(function() {
     console.log(csrf_token)
      $.ajax({
             type: "POST",
-            url: "http://192.168.50.109:9001/ai/get_chart/",
+            url: "http://localhost:9001/ai/get_chart/",
               headers: {
                 'X-CSRF-TOKEN':csrf_token,
                 'Content-Type':'application/json'
@@ -49,18 +49,18 @@ $(document).ready(function() {
         xkey: 'y',
         redraw: true,
         resize: true,
-        ykeys: ['a', 'b', 'c'],
+        ykeys: ['a', 'b'],
         hideHover: 'auto',
         responsive:true,
-        labels: ['Series A', 'Series B', 'Series c'],
-        lineColors: ['#07f723', '#eff707', '#e80202']
+        labels: ['Series A', 'Series B'],
+        lineColors: ['#1de9b6', '#A389D4']
     });
 
     }
   });
      $.ajax({
             type: "POST",
-            url: "http://192.168.50.109:9001/ai/update_tbl/",
+            url: "http://localhost:9001/ai/update_tbl/",
               headers: {
                 'X-CSRF-TOKEN':csrf_token,
                 'Content-Type':'application/json'
