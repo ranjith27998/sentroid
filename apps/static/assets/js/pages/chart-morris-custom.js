@@ -52,7 +52,7 @@ $(document).ready(function() {
         ykeys: ['a', 'b', 'c'],
         hideHover: 'auto',
         responsive:true,
-        labels: ['Series A', 'Series B', 'Series c'],
+        labels: ['POSITIVE', 'NEUTRAL', 'NEGATIVE'],
         lineColors: ['#07f723', '#eff707', '#e80202']
     });
 
